@@ -3,6 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - rm -rf .git
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --region us-west-2)
   build:
