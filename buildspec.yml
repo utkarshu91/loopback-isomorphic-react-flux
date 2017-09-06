@@ -1,4 +1,4 @@
-version: 0.1
+ersion: 0.1
 
 phases:
   pre_build:
@@ -13,6 +13,6 @@ phases:
        - docker tag yo-image:latest 484387184102.dkr.ecr.us-west-2.amazonaws.com/yo-image 
   post_build:
     commands:
- 	     - echo Build started on `date`
-       - echo Building the Docker image...
-	     - docker push 484387184102.dkr.ecr.us-west-2.amazonaws.com/yo-image:latest 
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker push 484387184102.dkr.ecr.us-west-2.amazonaws.com/yo-image:latest 
