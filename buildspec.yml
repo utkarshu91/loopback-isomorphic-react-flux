@@ -10,7 +10,7 @@ phases:
        - echo Build started on `date`
        - echo Building the Docker image...
        - docker	build -t yo-image .
-       - docker tag yo-image:latest 484387184102.dkr.ecr.us-west-2.amazonaws.com/yo-image 
+       - docker tag yo-image:latest 484387184102.dkr.ecr.us-west-2.amazonaws.com/yo-image:latest 
   post_build:
     commands:
       - echo Build started on `date`
