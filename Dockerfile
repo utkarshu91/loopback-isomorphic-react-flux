@@ -21,7 +21,7 @@ RUN apt-get update
 RUN apt-get install -y python
 
 RUN apt-get install -y pkg-config make g++
-
+RUN rm -rf .git
 WORKDIR /opt/app
 
 ADD . /opt/app
