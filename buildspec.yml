@@ -17,3 +17,4 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker push 484387184102.dkr.ecr.us-west-2.amazonaws.com/yo-image:latest 
+      - aws ecs update-service --cluster new --service --task-definition 1704:1 --desired-count 1
